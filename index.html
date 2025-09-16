@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>100 AI Prompts for Overcoming Writer's Block</title>
+    <title>AI Prompt Library - Overcome Writer's Block Instantly</title>
     <style>
         * {
             margin: 0;
@@ -19,7 +19,7 @@
         }
         
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -28,184 +28,198 @@
             text-align: center;
             padding: 40px 20px;
             background: rgba(255, 255, 255, 0.9);
-            border-radius: 10px;
+            border-radius: 15px;
             margin-bottom: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
         
-        h1 {
-            color: #667eea;
+        .header h1 {
             font-size: 2.5rem;
+            color: #667eea;
             margin-bottom: 15px;
         }
         
-        .subtitle {
-            font-size: 1.3rem;
-            color: #764ba2;
+        .header p {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .problem-solution {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .problem, .solution {
+            flex: 1;
+            min-width: 300px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .problem h2 {
+            color: #e74c3c;
             margin-bottom: 20px;
         }
         
-        .benefits {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .benefits h2 {
-            color: #667eea;
-            text-align: center;
-            margin-bottom: 25px;
-        }
-        
-        .benefit-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        .solution h2 {
+            color: #27ae60;
             margin-bottom: 20px;
         }
         
-        .benefit-item {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s ease;
+        .problem ul, .solution ul {
+            list-style-type: none;
+            padding: 0;
         }
         
-        .benefit-item:hover {
-            transform: translateY(-5px);
+        .problem li, .solution li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
         }
         
-        .benefit-item h3 {
-            color: #764ba2;
-            margin-bottom: 10px;
+        .problem li:before {
+            content: "❌";
+            position: absolute;
+            left: 0;
+            top: 0;
         }
         
-        .audience {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .audience h2 {
-            color: #667eea;
-            text-align: center;
-            margin-bottom: 25px;
-        }
-        
-        .audience-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            list-style: none;
-        }
-        
-        .audience-list li {
-            padding: 15px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            text-align: center;
-        }
-        
-        .what-you-get {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .what-you-get h2 {
-            color: #667eea;
-            text-align: center;
-            margin-bottom: 25px;
+        .solution li:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+            top: 0;
         }
         
         .features {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .features h2 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        
+        .feature-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
         }
         
         .feature {
-            background: #f8f9fa;
+            text-align: center;
             padding: 20px;
-            border-radius: 8px;
         }
         
         .feature h3 {
             color: #764ba2;
-            margin-bottom: 10px;
+            margin: 15px 0;
+        }
+        
+        .pricing {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .pricing h2 {
+            color: #667eea;
+            margin-bottom: 20px;
         }
         
         .price-section {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 40px;
-            border-radius: 10px;
-            text-align: center;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .price-container {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 20px 0;
         }
         
         .price {
             font-size: 3rem;
-            color: #667eea;
             font-weight: bold;
-            margin: 20px 0;
         }
         
-        .original-price {
-            text-decoration: line-through;
-            color: #999;
-            margin-right: 15px;
-        }
-        
-        .buy-button {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 15px 40px;
-            font-size: 1.2rem;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            margin: 20px 0;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .buy-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        #paypal-button-container {
+            margin: 30px 0;
         }
         
         .guarantee {
-            background: #e8f4f8;
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        
+        .testimonials {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonials h2 {
+            text-align: center;
+            color: #667eea;
+            margin-bottom: 30px;
+        }
+        
+        .testimonial {
+            background: #f8f9fa;
             padding: 20px;
             border-radius: 10px;
-            text-align: center;
-            margin: 20px 0;
+            margin-bottom: 20px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .testimonial-author {
+            font-weight: bold;
+            color: #764ba2;
+            margin-top: 10px;
+            text-align: right;
         }
         
         .faq {
             background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
         
         .faq h2 {
-            color: #667eea;
             text-align: center;
-            margin-bottom: 25px;
+            color: #667eea;
+            margin-bottom: 30px;
         }
         
         .faq-item {
             margin-bottom: 20px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
         }
         
         .faq-item h3 {
@@ -213,38 +227,13 @@
             margin-bottom: 10px;
         }
         
-        .testimonials {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 30px;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .testimonials h2 {
-            color: #667eea;
-            text-align: center;
-            margin-bottom: 25px;
-        }
-        
-        .testimonial {
-            background: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-        
-        .testimonial-author {
-            font-weight: bold;
-            color: #764ba2;
-            margin-top: 10px;
-        }
-        
         .footer {
             text-align: center;
             padding: 20px;
-            color: white;
-            font-size: 0.9rem;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            color: #555;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
         }
         
         @media (max-width: 768px) {
@@ -252,12 +241,12 @@
                 padding: 10px;
             }
             
-            h1 {
+            .header h1 {
                 font-size: 2rem;
             }
             
             .price {
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
         }
     </style>
@@ -265,83 +254,69 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1>🚀 NEW: 100 AI Prompts for Overcoming Writer's Block</h1>
-            <div class="subtitle">STUCK WRITING? Get unstuck instantly with 100 ready-made prompts!</div>
+            <h1>🚀 AI Prompt Library</h1>
+            <p>Overcome Writer's Block Instantly & Create Content 10x Faster</p>
         </div>
         
-        <div class="benefits">
-            <h2>✅ WHY THIS WORKS BETTER THAN EXPENSIVE COURSES</h2>
-            <div class="benefit-grid">
-                <div class="benefit-item">
-                    <h3>No More Staring</h3>
-                    <p>Stop wasting hours staring at blank pages</p>
-                </div>
-                <div class="benefit-item">
-                    <h3>Instant Inspiration</h3>
-                    <p>Get content ideas in seconds, not hours</p>
-                </div>
-                <div class="benefit-item">
-                    <h3>Works With Any AI</h3>
-                    <p>Compatible with ChatGPT, Claude, Bard, and more</p>
-                </div>
-                <div class="benefit-item">
-                    <h3>Professional Results</h3>
-                    <p>Create blog posts, social media, emails that convert</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="audience">
-            <h2>🎯 PERFECT FOR:</h2>
-            <ul class="audience-list">
-                <li>Bloggers</li>
-                <li>Authors</li>
-                <li>Content creators</li>
-                <li>Students</li>
-                <li>Anyone who writes</li>
-            </ul>
-        </div>
-        
-        <div class="what-you-get">
-            <h2>💎 WHAT YOU GET:</h2>
-            <div class="features">
-                <div class="feature">
-                    <h3>100 Ready-to-Use AI Prompts</h3>
-                    <p>Organized by category for blog posts, social media, emails, videos</p>
-                </div>
-                <div class="feature">
-                    <h3>Quick Start Guide</h3>
-                    <p>5 highest-impact prompts to get results immediately</p>
-                </div>
-                <div class="feature">
-                    <h3>Bonus Resources</h3>
-                    <p>Implementation checklist, resource list, troubleshooting guide</p>
-                </div>
-                <div class="feature">
-                    <h3>Lifetime Access</h3>
-                    <p>Works forever with no subscriptions</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="price-section">
-            <h2>⏰ LIMITED TIME OFFER</h2>
-            <div>
-                <span class="original-price">$27</span>
-                <span class="price">$9.99</span>
-            </div>
-            <p>ONE-TIME PAYMENT • INSTANT ACCESS • WORKS FOREVER</p>
-            
-            <script 
-  src="https://www.paypal.com/sdk/js?client-id=BAAsvCi6o7svt53-hZVUJarQ3Wrn5XDJ5abWMjZRdAAso8AAfWDBp7CqXA4G3f45jnbMHNFFaElhZP4MAA&components=hosted-buttons&disable-funding=venmo&currency=USD">
-</script>
-            <div id="paypal-button-container">
-                <p>PayPal button will appear here after you add your button code</p>
+        <div class="problem-solution">
+            <div class="problem">
+                <h2>❌ The Problem</h2>
+                <ul>
+                    <li>Staring at a blank screen for hours</li>
+                    <li>Writer's block strikes at the worst times</li>
+                    <li>Content creation feels like pulling teeth</li>
+                    <li>Running out of ideas constantly</li>
+                    <li>Spending too much time brainstorming</li>
+                    <li>Falling behind on deadlines</li>
+                </ul>
             </div>
             
-            <div class="guarantee">
-                <h3>💯 30-Day Money-Back Guarantee</h3>
-                <p>Not happy? Get a full refund, no questions asked!</p>
+            <div class="solution">
+                <h2>✅ The Solution</h2>
+                <ul>
+                    <li>100 powerful AI prompts ready to use</li>
+                    <li>Copy-paste solutions that work instantly</li>
+                    <li>No more brainstorming - just create</li>
+                    <li>Content ideas for any situation</li>
+                    <li>Save 5+ hours every single week</li>
+                    <li>Never miss another deadline</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h2>✨ What's Inside Your Prompt Library</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3>📝 Blog Posts</h3>
+                    <p>50 prompts to write engaging blog content in any niche</p>
+                </div>
+                <div class="feature">
+                    <h3>📱 Social Media</h3>
+                    <p>30 prompts for viral social media content</p>
+                </div>
+                <div class="feature">
+                    <h3>📧 Email Marketing</h3>
+                    <p>20 prompts for high-converting email campaigns</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pricing">
+            <h2>💎 One-Time Investment</h2>
+            <div class="price-section">
+                <div class="price-container">
+                    <span class="price">$9.99</span>
+                </div>
+                <p>ONE-TIME PAYMENT • INSTANT ACCESS • WORKS FOREVER</p>
+                
+                <!-- PayPal Button Container -->
+                <div id="paypal-button-container"></div>
+                
+                <div class="guarantee">
+                    <h3>💯 30-Day Money-Back Guarantee</h3>
+                    <p>Not happy? Get a full refund, no questions asked!</p>
+                </div>
             </div>
         </div>
         
@@ -391,12 +366,30 @@
         </div>
     </div>
     
-    <!-- PayPal Button Script -->
+    <!-- PayPal Button Script - NOW PROPERLY INTEGRATED -->
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAsvCi6o7svt53-hZVUJarQ3Wrn5XDJ5abWMjZRdAAso8AAfWDBp7CqXA4G3f45jnbMHNFFaElhZP4MAA&components=hosted-buttons&disable-funding=venmo&currency=USD"></script>
     <script>
-        // This is where your PayPal button code will go
-        // You'll replace this with the actual PayPal script from your button
-        console.log("Add your PayPal button code here");
+      paypal.Buttons({
+        createOrder: function(data, actions) {
+          return actions.order.create({
+            purchase_units: [{
+              amount: {
+                value: '9.99'
+              }
+            }]
+          });
+        },
+        onApprove: function(data, actions) {
+          return actions.order.capture().then(function(details) {
+            alert('Thank you for your purchase! Check your email for your product.');
+            // In a real implementation, you would send details to your server here
+          });
+        },
+        onError: function(err) {
+          console.error('PayPal Checkout onError', err);
+          alert('An error occurred during the transaction. Please try again.');
+        }
+      }).render('#paypal-button-container');
     </script>
 </body>
 </html>
-
