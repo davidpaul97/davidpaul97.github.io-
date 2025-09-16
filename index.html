@@ -259,8 +259,9 @@
             }
         }
         
-        /* PayPal Button Styles */
-        .pp-M3K9WRDPBZP9J {
+        /* PayPal Button Styles - Optimized for GitHub Pages */
+        .paypal-button {
+            display: inline-block;
             text-align: center;
             border: none;
             border-radius: 0.25rem;
@@ -274,6 +275,20 @@
             font-size: 1rem;
             line-height: 1.25rem;
             cursor: pointer;
+        }
+        
+        .paypal-images {
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        
+        .paypal-images img {
+            vertical-align: middle;
+        }
+        
+        .paypal-powered-by {
+            font-size: 0.75rem;
+            margin-top: 0.25rem;
         }
     </style>
 </head>
@@ -336,12 +351,16 @@
                 </div>
                 <p>ONE-TIME PAYMENT • INSTANT ACCESS • WORKS FOREVER</p>
                 
-                <!-- Your PayPal Button -->
+                <!-- PayPal Button - Optimized for GitHub Pages -->
                 <div id="paypal-button-container">
-                    <form action="https://www.paypal.com/ncp/payment/M3K9WRDPBZP9J" method="post" target="_blank" style="display:inline-grid;justify-items:center;align-content:start;gap:0.5rem;">
-                        <input class="pp-M3K9WRDPBZP9J" type="submit" value="Buy Now" />
-                        <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" />
-                        <section style="font-size: 0.75rem;"> Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
+                    <form action="https://www.paypal.com/ncp/payment/M3K9WRDPBZP9J" method="post" target="_blank">
+                        <button type="submit" class="paypal-button">Buy Now</button>
+                        <div class="paypal-images">
+                            <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" />
+                        </div>
+                        <div class="paypal-powered-by">
+                            Powered by <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;"/>
+                        </div>
                     </form>
                 </div>
                 
